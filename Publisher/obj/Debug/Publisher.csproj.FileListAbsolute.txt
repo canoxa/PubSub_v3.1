@@ -1,0 +1,56 @@
+C:\DAD\secondTry\Publisher\bin\Debug\Publisher.dll.config
+C:\DAD\secondTry\Publisher\bin\Debug\Publisher.dll
+C:\DAD\secondTry\Publisher\bin\Debug\Publisher.pdb
+C:\DAD\secondTry\Publisher\bin\Debug\Broker.dll
+C:\DAD\secondTry\Publisher\bin\Debug\Message.dll
+C:\DAD\secondTry\Publisher\bin\Debug\Process.dll
+C:\DAD\secondTry\Publisher\bin\Debug\subscriber.dll
+C:\DAD\secondTry\Publisher\bin\Debug\Broker.pdb
+C:\DAD\secondTry\Publisher\bin\Debug\Message.pdb
+C:\DAD\secondTry\Publisher\bin\Debug\Process.pdb
+C:\DAD\secondTry\Publisher\bin\Debug\subscriber.pdb
+C:\DAD\secondTry\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\DAD\secondTry\Publisher\obj\Debug\Publisher.dll
+C:\DAD\secondTry\Publisher\obj\Debug\Publisher.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Publisher.dll.config
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Publisher.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Publisher.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Broker.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Message.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Process.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\subscriber.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Broker.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Message.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\Process.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\bin\Debug\subscriber.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\obj\Debug\Publisher.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Publisher\obj\Debug\Publisher.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Publisher.dll.config
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Publisher.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Publisher.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Broker.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Message.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Process.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\subscriber.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Broker.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Message.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\Process.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\bin\Debug\subscriber.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\obj\Debug\Publisher.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Publisher\obj\Debug\Publisher.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Publisher.dll.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Publisher.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Publisher.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Broker.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Process.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\subscriber.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\Process.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\Debug\subscriber.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.pdb
