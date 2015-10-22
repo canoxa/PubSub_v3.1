@@ -10,3 +10,14 @@ C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Message\bin\Debu
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Message\obj\Debug\Message.dll
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Message\obj\Debug\Message.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\bin\Debug\Message.dll.config
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\bin\Debug\Message.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\bin\Debug\Message.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\obj\Debug\Message.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Message\obj\Debug\Message.pdb
+C:\DAD\PubSub_v3.1\Message\bin\Debug\Message.dll.config
+C:\DAD\PubSub_v3.1\Message\bin\Debug\Message.dll
+C:\DAD\PubSub_v3.1\Message\bin\Debug\Message.pdb
+C:\DAD\PubSub_v3.1\Message\obj\Debug\Message.dll
+C:\DAD\PubSub_v3.1\Message\obj\Debug\Message.pdb

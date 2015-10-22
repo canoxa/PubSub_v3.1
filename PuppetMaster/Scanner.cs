@@ -53,98 +53,63 @@ namespace PubSub
         public List<MyProcess> fillProcessList(string v, TreeNode root)
         {
             PuppetInterface myremote;
-            
+
             string[] lines = System.IO.File.ReadAllLines(v);
             List<MyProcess> res = new List<MyProcess>();
-            
+
             foreach (string line in lines)
             {
                 if (line.Contains("Is broker"))
                 {
                     string[] words = line.Split(' '); //words[1]-name, words[5]-site, words[7]-url
+                    TreeNode t = site_treeNode[words[5]];
 
-                    if (!words[7].Contains("1.1.1.0"))
-                    { //url e remoto
-                        TreeNode t = site_treeNode[words[5]];
+                    string urlService = words[7].Substring(0, words[7].Length - 6);
 
-                        myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "tcp://localhost:8086/PuppetMasterURL");
 
-                        myremote.createProcess(t, "broker", words[1], words[5], words[7]);
+                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface),urlService+"PuppetMasterURL");
+                    myremote.createProcess(t, "broker", words[1], words[5], words[7]);
 
-                        //actualizar estruturas -  nao faz setBroker()
-                        Broker aux = new Broker(words[1], words[5], words[7]);
-                        
-                        pname_site.Add(words[1], words[5]);
-                        node_broker.Add(t, aux);
-                        res.Add(aux);
-                    }
-                    else
-                    {
-                        TreeNode t = site_treeNode[words[5]];
-                        Broker aux = new Broker(words[1], words[5], words[7]);
-                        t.setBroker(aux);
-
-                        pname_site.Add(words[1], words[5]);
-                        node_broker.Add(t, aux);
-                        res.Add(aux);
-                    }
+                    //actualizar estruturas
+                    Broker aux = new Broker(words[1], words[5], words[7]);
+                    t.setBroker(aux);
+                    pname_site.Add(words[1], words[5]);
+                    node_broker.Add(t, aux);
+                    res.Add(aux);
                 }
                 if (line.Contains("Is publisher"))
                 {
                     string[] words = line.Split(' '); //words[1]-name, words[5]-site, words[7]-url
 
-                    if (!words[7].Contains("1.1.1.0"))
-                    { //url e remoto
-                        TreeNode t = site_treeNode[words[5]];
 
-                        myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
-                        myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
+                    TreeNode t = site_treeNode[words[5]];
 
-                        //actualizar
-                        Broker b = findBroker(words[5]);
-                        Publisher aux = new Publisher(words[1], words[5], words[7], b);
-                        pname_site.Add(words[1], words[5]);
-                        res.Add(aux);
+                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
+                    myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
 
-                    }
-                    else {
-                        Broker b = findBroker(words[5]);
-                        Publisher aux = new Publisher(words[1], words[5], words[7], b);
-                        TreeNode t = site_treeNode[words[5]];
-                        t.addPublisher(aux);
-                        pname_site.Add(words[1], words[5]);
-                        res.Add(aux);
-                    }
+                    //actualizar
+                    Broker b = findBroker(words[5]);
+                    Publisher aux = new Publisher(words[1], words[5], words[7], b);
+                    t.addPublisher(aux);
+                    pname_site.Add(words[1], words[5]);
+                    res.Add(aux);
                 }
                 if (line.Contains("Is subscriber"))
                 {
                     string[] words = line.Split(' '); //words[1]-name, words[5]-site, words[7]-url
 
-                    if (!words[7].Contains("1.1.1.0"))
-                    { //url e remoto
-                        TreeNode t = site_treeNode[words[5]];
+                    TreeNode t = site_treeNode[words[5]];
 
-                        myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
-                        myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
+                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
+                    myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
 
-                        //actualizar
-                        Subscriber aux = new Subscriber(words[1], words[5], words[7]);
-                        pname_site.Add(words[1], words[5]);
-                        res.Add(aux);
-                    }
-                    else
-                    {
-                        //Broker b = findBroker(words[5]);
-                        Subscriber aux = new Subscriber(words[1], words[5], words[7]);
-
-                        TreeNode t = site_treeNode[words[5]];
-                        t.addSubscriber(aux);
-                        pname_site.Add(words[1], words[5]);
-                        res.Add(aux);
-                    }
+                    //actualizar
+                    Subscriber aux = new Subscriber(words[1], words[5], words[7]);
+                    t.addSubscriber(aux);
+                    pname_site.Add(words[1], words[5]);
+                    res.Add(aux);
                 }
             }
-
             return res;
         }
 

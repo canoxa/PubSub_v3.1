@@ -58,3 +58,33 @@ C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\TreeNode\bin\Deb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.dll
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\TreeNode.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\TreeNode.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Broker.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Publisher.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\subscriber.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Process.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Message.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Broker.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Publisher.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\subscriber.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Process.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\bin\Debug\Message.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\TreeNode.dll
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\TreeNode.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Broker.exe
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Publisher.exe
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\subscriber.exe
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Process.dll
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Message.dll
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Broker.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Publisher.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\subscriber.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Process.pdb
+C:\DAD\PubSub_v3.1\TreeNode\bin\Debug\Message.pdb
+C:\DAD\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.csprojResolveAssemblyReference.cache
+C:\DAD\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.dll
+C:\DAD\PubSub_v3.1\TreeNode\obj\Debug\TreeNode.pdb

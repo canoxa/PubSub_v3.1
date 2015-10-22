@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Broker\Broker.csproj">
+      <Project>{f52a28c4-aef7-4b35-bffd-96d2b3ed8d24}</Project>
+      <Name>Broker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonTypes\CommonTypes.csproj">
+      <Project>{2d3ba93d-c147-410b-ae4e-20c3808ef97d}</Project>
+      <Name>CommonTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Publisher\Publisher.csproj">
+      <Project>{6c2c7b91-07cc-4c66-aafc-52b206476007}</Project>
+      <Name>Publisher</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\subscriber\Subscriber.csproj">
+      <Project>{74c4def3-1d06-4160-b2fc-7612746eaf68}</Project>
+      <Name>Subscriber</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TreeNode\TreeNode.csproj">
+      <Project>{f063afbe-bbaf-4844-9429-d51b64cdb18c}</Project>
+      <Name>TreeNode</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

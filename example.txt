@@ -1,23 +1,13 @@
 Site site0 Parent none
-
 Site site1 Parent site0
-
 Site site2 Parent site0
-
 Site site3 Parent site0
-
 Site site4 Parent site1
-
 Site site5 Parent site1
-
-Process broker0 Is broker On site0 URL tcp://1.1.1.0:3333/broker
-
-Process broker1 Is broker On site1 URL tcp://1.1.1.1:3333/broker
-
-Process broker2 Is broker On site2 URL tcp://1.1.1.2:3333/broker
-
-Process broker3 Is broker On site3 URL tcp://1.1.1.3:3333/broker
-Process broker4 Is broker On site4 URL tcp://1.1.1.4:3333/broker
-
-Process broker5 Is broker On site5 URL tcp://1.1.1.5:3333/broker
+Process broker0 Is broker On site0 URL tcp://localhost:9000/broker
+Process broker1 Is broker On site1 URL tcp://localhost:9001/broker
+Process broker2 Is broker On site2 URL tcp://localhost:9002/broker
+Process broker3 Is broker On site3 URL tcp://localhost:9003/broker
+Process broker4 Is broker On site4 URL tcp://localhost:9004/broker
+Process broker5 Is broker On site5 URL tcp://localhost:9005/broker
 

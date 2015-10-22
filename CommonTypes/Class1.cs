@@ -21,5 +21,6 @@ namespace PubSub
 
     public interface PuppetInterface {
         void createProcess(TreeNode t, string role, string n, string s, string u);
+        void ping(string m);
     }
 }

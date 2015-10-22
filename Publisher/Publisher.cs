@@ -15,6 +15,14 @@ namespace PubSub
             broker = b;
         }
 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("@publisher !!! porto -> {0}", args[0]);
+
+
+            Console.ReadLine();
+        }
+
         public void publishEvent(string topic, int number, int interval)
         {
             for (int i = 1; i <= number; i++)

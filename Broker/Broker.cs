@@ -21,6 +21,14 @@ namespace PubSub
 
         }
 
+        static void Main(string[] args)
+        {
+            Console.WriteLine("@broker !!! url -> {0}", args[0]);
+           
+
+            Console.ReadLine();
+        }
+
         public void publish(Message aux)//chamada pelo Publisher
         {
 

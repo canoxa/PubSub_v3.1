@@ -54,3 +54,31 @@ C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\bin\De
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.dll
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Publisher\obj\Debug\Publisher.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Publisher.dll.config
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Publisher.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Publisher.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Broker.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Message.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Process.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\subscriber.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Broker.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Message.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\Process.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\bin\Debug\subscriber.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\obj\Debug\Publisher.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Publisher\obj\Debug\Publisher.pdb
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Publisher.exe.config
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Publisher.exe
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Publisher.pdb
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Broker.exe
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Message.dll
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Process.dll
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\subscriber.exe
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Broker.pdb
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Message.pdb
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Process.pdb
+C:\DAD\PubSub_v3.1\Publisher\bin\Debug\subscriber.pdb
+C:\DAD\PubSub_v3.1\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\DAD\PubSub_v3.1\Publisher\obj\Debug\Publisher.exe
+C:\DAD\PubSub_v3.1\Publisher\obj\Debug\Publisher.pdb

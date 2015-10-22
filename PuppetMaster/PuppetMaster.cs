@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,37 +14,41 @@ namespace PubSub
     static class PuppetMaster
     {
         
-        private static string conf_filename = @"C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\example.txt";
+        private static string conf_filename = @"C:\DAD\PubSub_v3.1\example.txt";
 
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            TcpChannel channel = new TcpChannel(8086);
+            TcpChannel channel = new TcpChannel(Int32.Parse(args[0]));
             ChannelServices.RegisterChannel(channel, true);
 
+            PMcreateProcess createProcess = new PMcreateProcess();
+            RemotingServices.Marshal(createProcess, "PuppetMasterURL", typeof(PMcreateProcess));
+
+            /*
             RemotingConfiguration.RegisterWellKnownServiceType(
                 typeof(PMcreateProcess),
                 "PuppetMasterURL",
-                WellKnownObjectMode.Singleton);
+                WellKnownObjectMode.Singleton);*/
 
 
             //lancar slaves
             for (int i = 0; i < 6; i++) {
 
-                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\localPM\bin\Debug\localPM.exe");
-                string arg = "tcp://1.1.1." + i.ToString() + ":8000/PuppetMasterURL";
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\localPM\bin\Debug\localPM.exe");
+                int port = 9000 + i;
+                string arg = port.ToString();
                 startInfo.Arguments = arg;
 
                 Process p = new Process();
                 p.StartInfo = startInfo;
                 
                 p.Start();
+               
             }
-
-            /*
 
             Scanner scan = new Scanner();
             
@@ -51,38 +56,70 @@ namespace PubSub
 
             //criar arvore a partir de root
             scan.readTreeFromFile(root, conf_filename);
-            MessageBox.Show("depois de fazer a tree");
+            
+
             //preencher lstProcess - lista de todos os processos no config file
             List<MyProcess> lstProcess = scan.fillProcessList(conf_filename, root);
-            MessageBox.Show("depois de fazer a lista");
+            
+
             //estruturas para optimizar a procura
             Dictionary<string, string> pname_site = scan.getPname_site();
             Dictionary<string, TreeNode> site_treeNode = scan.getSite_Node();
             Dictionary<TreeNode, Broker> node_broker = scan.getNode_Broker();
-            */
+
             MessageBox.Show("finito");
         }
     }
 
     class PMcreateProcess : MarshalByRefObject, PuppetInterface
     {
+        public void ping(string m) { MessageBox.Show("ping :" + m); }
         public void createProcess(TreeNode site, string role, string name, string s, string url)
         {
-            string aux = "PMcreateProcess @ " + site.ID + " role " + role;
+            string aux = "MasterPMcreateProcess @ url -> " + url + " site -> " + s;
             MessageBox.Show(aux);
-            if (role.Equals("broker")) {
+            if (role.Equals("broker"))
+            {
                 Broker b = new Broker(url, name, s);
                 site.setBroker(b);
+
+                //Process.Start()
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.exe");
+                string[] args = { url, name, s};
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process p = new Process();
+                p.StartInfo = startInfo;
+
+                p.Start();
             }
             if (role.Equals("subscriber"))
             {
                 Subscriber sub = new Subscriber(url, name, s);
                 site.addSubscriber(sub);
+
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Subscriber\bin\Debug\Subscriber.exe");
+                string[] args = { url, name, s };
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process p = new Process();
+                p.StartInfo = startInfo;
+
+                p.Start();
             }
             if (role.Equals("publisher"))
             {
-                Publisher p = new Publisher(url, name, s,site.getBroker());
+                Publisher p = new Publisher(url, name, s, site.getBroker());
                 site.addPublisher(p);
+
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Publisher.exe");
+                string[] args = { url, name, s };
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process pro = new Process();
+                pro.StartInfo = startInfo;
+
+                pro.Start();
             }
 
         }
