@@ -36,7 +36,7 @@ namespace PubSub
 
 
             //lancar slaves
-            for (int i = 0; i < 6; i++) {
+            for (int i = 0; i < 2; i++) {
 
                 ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\localPM\bin\Debug\localPM.exe");
                 int port = 9000 + i;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
@@ -45,16 +46,44 @@ namespace PubSub
             {
                 Broker b = new Broker(url, name, s);
                 site.setBroker(b);
+
+                //Process.Start()
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.exe");
+                string[] args = { url, name, s };
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process p = new Process();
+                p.StartInfo = startInfo;
+
+                p.Start();
             }
             if (role.Equals("subscriber"))
             {
                 Subscriber sub = new Subscriber(url, name, s);
                 site.addSubscriber(sub);
+
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Subscriber\bin\Debug\Subscriber.exe");
+                string[] args = { url, name, s };
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process p = new Process();
+                p.StartInfo = startInfo;
+
+                p.Start();
             }
             if (role.Equals("publisher"))
             {
                 Publisher p = new Publisher(url, name, s, site.getBroker());
                 site.addPublisher(p);
+
+                ProcessStartInfo startInfo = new ProcessStartInfo(@"C:\DAD\PubSub_v3.1\Publisher\bin\Debug\Publisher.exe");
+                string[] args = { url, name, s };
+                startInfo.Arguments = String.Join(" ", args);
+
+                Process pro = new Process();
+                pro.StartInfo = startInfo;
+
+                pro.Start();
             }
 
         }
