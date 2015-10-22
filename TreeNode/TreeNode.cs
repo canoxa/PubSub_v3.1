@@ -11,8 +11,8 @@ namespace PubSub
     public class TreeNode
     {
 
-        private HashSet<Subscriber> lstSubs;
-        private HashSet<Publisher> lstPubs;
+        //private HashSet<Subscriber> lstSubs;
+        //private HashSet<Publisher> lstPubs;
         private Broker broker;
         public string ID;
         private List<TreeNode> _children;
@@ -21,8 +21,8 @@ namespace PubSub
         public TreeNode(string id)
         {
             _children = new List<TreeNode>();
-            lstSubs = new HashSet<Subscriber>();
-            lstPubs = new HashSet<Publisher>();
+            //lstSubs = new HashSet<Subscriber>();
+            //lstPubs = new HashSet<Publisher>();
             this.ID = id;
 
         }
@@ -31,13 +31,13 @@ namespace PubSub
 
         public void setBroker(Broker b) { broker = b; }
 
-        public HashSet<Publisher> getPubs() { return lstPubs; }
+        //public HashSet<Publisher> getPubs() { return lstPubs; }
 
-        public HashSet<Subscriber> getSubs() { return lstSubs; }
+        //public HashSet<Subscriber> getSubs() { return lstSubs; }
 
-        public void addSubscriber(Subscriber s) { lstSubs.Add(s); }
+        //public void addSubscriber(Subscriber s) { lstSubs.Add(s); }
 
-        public void addPublisher(Publisher p) { lstPubs.Add(p); }
+        //public void addPublisher(Publisher p) { lstPubs.Add(p); }
 
         public List<TreeNode> GetChildren()
         {

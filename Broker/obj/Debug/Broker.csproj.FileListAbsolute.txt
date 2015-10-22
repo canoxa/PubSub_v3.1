@@ -63,10 +63,8 @@ C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.exe
 C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.pdb
 C:\DAD\PubSub_v3.1\Broker\bin\Debug\Message.dll
 C:\DAD\PubSub_v3.1\Broker\bin\Debug\Process.dll
-C:\DAD\PubSub_v3.1\Broker\bin\Debug\subscriber.exe
 C:\DAD\PubSub_v3.1\Broker\bin\Debug\Message.pdb
 C:\DAD\PubSub_v3.1\Broker\bin\Debug\Process.pdb
-C:\DAD\PubSub_v3.1\Broker\bin\Debug\subscriber.pdb
 C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
 C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.exe
 C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.pdb

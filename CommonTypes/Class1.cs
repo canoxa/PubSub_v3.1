@@ -14,8 +14,8 @@ namespace PubSub
 
     public interface SubInterface {//usado pelo MPM
 
-        void subscribe(string topico);
-        void unsubscribe(string topico);
+        void subscribe(string topic);
+        void unsubscribe(string topic);
 
     }
 
@@ -42,8 +42,8 @@ namespace PubSub
     {
         void forwardFlood(Message m,Broker b);
         void forwardFilter(Message m, Broker b);
-        void forwardSub(string topic,Subscriber s);
-        void forwardUnsub(string topic, Subscriber s);
+        void forwardSub(string topic,string nomeSub);
+        void forwardUnsub(string topic, string nomeSub);
     }
 
 }

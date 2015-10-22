@@ -65,8 +65,7 @@ namespace PubSub
                     TreeNode t = site_treeNode[words[5]];
 
                     string urlService = words[7].Substring(0, words[7].Length - 6);
-
-
+                    
                     myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface),urlService+"PuppetMasterURL");
                     myremote.createProcess(t, "broker", words[1], words[5], words[7]);
 
@@ -80,32 +79,33 @@ namespace PubSub
                 if (line.Contains("Is publisher"))
                 {
                     string[] words = line.Split(' '); //words[1]-name, words[5]-site, words[7]-url
-
-
                     TreeNode t = site_treeNode[words[5]];
 
-                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
+                    string urlService = words[7].Substring(0, words[7].Length - 9);
+
+                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), urlService + "PuppetMasterURL");
                     myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
 
                     //actualizar
-                    Broker b = findBroker(words[5]);
-                    Publisher aux = new Publisher(words[1], words[5], words[7], b);
-                    t.addPublisher(aux);
+                    //Broker b = findBroker(words[5]);
+                    Publisher aux = new Publisher(words[1], words[5], words[7]/*, b*/);
+                    //t.addPublisher(aux);
                     pname_site.Add(words[1], words[5]);
                     res.Add(aux);
                 }
                 if (line.Contains("Is subscriber"))
                 {
                     string[] words = line.Split(' '); //words[1]-name, words[5]-site, words[7]-url
-
                     TreeNode t = site_treeNode[words[5]];
 
-                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), "PuppetMasterURL");
-                    myremote.createProcess(t,"publisher", words[1], words[5], words[7]);
+                    string urlService = words[7].Substring(0, words[7].Length - 10);
+
+                    myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface), urlService + "PuppetMasterURL");
+                    myremote.createProcess(t,"subscriber", words[1], words[5], words[7]);
 
                     //actualizar
                     Subscriber aux = new Subscriber(words[1], words[5], words[7]);
-                    t.addSubscriber(aux);
+                    //t.addSubscriber(aux);
                     pname_site.Add(words[1], words[5]);
                     res.Add(aux);
                 }

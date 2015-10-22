@@ -52,14 +52,6 @@
       <Project>{9c9d1172-1bef-4d61-bb1b-8ff8e7ad373f}</Project>
       <Name>Message</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Publisher\Publisher.csproj">
-      <Project>{6c2c7b91-07cc-4c66-aafc-52b206476007}</Project>
-      <Name>Publisher</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\subscriber\Subscriber.csproj">
-      <Project>{74c4def3-1d06-4160-b2fc-7612746eaf68}</Project>
-      <Name>Subscriber</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TreeNode\TreeNode.csproj">
       <Project>{f063afbe-bbaf-4844-9429-d51b64cdb18c}</Project>
       <Name>TreeNode</Name>

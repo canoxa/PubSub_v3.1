@@ -10,13 +10,13 @@ namespace PubSub
     public class Broker : MyProcess
     {
         private List<Broker> lstVizinhos;
-        private Dictionary<Subscriber, string> lstSubsTopic; //quem subscreveu neste no, a quE
+        private Dictionary<string, string> lstSubsTopic; //quem subscreveu neste no, a quE
         private Dictionary<Broker, string> routingTable; //vizinho,subscrições atingiveis atraves desse vizinho
 
         public Broker(string u, string n, string s) : base(u, n, s)
         {
             lstVizinhos = new List<Broker>();
-            lstSubsTopic = new Dictionary<Subscriber, string>();
+            lstSubsTopic = new Dictionary<string, string>();
             routingTable = new Dictionary<Broker, string>();
 
         }
@@ -32,7 +32,7 @@ namespace PubSub
         public void publish(Message aux)//chamada pelo Publisher
         {
 
-            foreach (KeyValuePair<Subscriber, string> t in lstSubsTopic)
+            foreach (KeyValuePair<string, string> t in lstSubsTopic)
             {
                 if (aux.Topic.Equals(t.Value))
                 {
@@ -50,7 +50,7 @@ namespace PubSub
         private void floodMsg(Message aux, Broker broker)//chamada pelos brokers
         {
 
-            foreach (KeyValuePair<Subscriber, string> t in lstSubsTopic)
+            foreach (KeyValuePair<string, string> t in lstSubsTopic)
             {
                 if (aux.Topic.Equals(t.Value))
                 {
@@ -67,16 +67,16 @@ namespace PubSub
             }
         }
 
-        private void notify(Subscriber s, Message m)
+        private void notify(string s, Message m)
         {
-            s.entregaEvento(m);
+            //s.entregaEvento(m);
         }
 
         public List<Broker> getVizinhos()
         {
             return lstVizinhos;
         }
-        public Dictionary<Subscriber, string> getSubsTopic()
+        public Dictionary<string, string> getSubsTopic()
         {
             return lstSubsTopic;
         }

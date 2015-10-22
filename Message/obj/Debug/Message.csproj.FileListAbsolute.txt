@@ -21,4 +21,3 @@ C:\DAD\PubSub_v3.1\Message\bin\Debug\Message.dll
 C:\DAD\PubSub_v3.1\Message\bin\Debug\Message.pdb
 C:\DAD\PubSub_v3.1\Message\obj\Debug\Message.dll
 C:\DAD\PubSub_v3.1\Message\obj\Debug\Message.pdb
-C:\DAD\PubSub_v3.1\Message\obj\Debug\Message.csprojResolveAssemblyReference.cache

@@ -5,4 +5,8 @@ Site site3 Parent site0
 Site site4 Parent site1
 Site site5 Parent site1
 Process broker0 Is broker On site0 URL tcp://localhost:9000/broker
-Process broker1 Is broker On site1 URL tcp://localhost:9001/broker
+Process broker1 Is broker On site1 URL tcp://localhost:9100/broker
+Process subscriber1 Is subscriber on site1 URL tcp://localhost:9100/subscriber
+Process subscriber2 Is subscriber on site0 URL tcp://localhost:9000/subscriber
+Process publisher1 Is publisher on site0 URL tcp://localhost:9000/publisher
+Process publisher2 Is publisher on site1 URL tcp://localhost:9100/publisher

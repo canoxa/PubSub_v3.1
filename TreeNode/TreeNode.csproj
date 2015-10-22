@@ -48,14 +48,6 @@
       <Project>{f52a28c4-aef7-4b35-bffd-96d2b3ed8d24}</Project>
       <Name>Broker</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Publisher\Publisher.csproj">
-      <Project>{6c2c7b91-07cc-4c66-aafc-52b206476007}</Project>
-      <Name>Publisher</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\subscriber\Subscriber.csproj">
-      <Project>{74c4def3-1d06-4160-b2fc-7612746eaf68}</Project>
-      <Name>Subscriber</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

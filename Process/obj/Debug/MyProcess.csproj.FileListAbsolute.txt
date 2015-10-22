@@ -20,4 +20,3 @@ C:\DAD\PubSub_v3.1\Process\bin\Debug\Process.dll
 C:\DAD\PubSub_v3.1\Process\bin\Debug\Process.pdb
 C:\DAD\PubSub_v3.1\Process\obj\Debug\Process.dll
 C:\DAD\PubSub_v3.1\Process\obj\Debug\Process.pdb
-C:\DAD\PubSub_v3.1\Process\obj\Debug\MyProcess.csprojResolveAssemblyReference.cache
